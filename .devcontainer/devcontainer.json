@@ -1,0 +1,19 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "extensions": [
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "msjsdiag.debugger-for-chrome",
+    "humao.rest-client",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

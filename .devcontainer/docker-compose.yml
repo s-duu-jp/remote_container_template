@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    container_name: ${COMPOSE_PROJECT_NAME}_web
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VARIANT: ${NODE_VERSION}
+        USER_UID: 1000
+        USER_GID: 1000
+    volumes:
+      - ..:/workspace:cached
+      - ~/.gitconfig:/root/.gitconfig
+    command: sleep infinity
