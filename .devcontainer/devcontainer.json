@@ -6,7 +6,10 @@
     "terminal.integrated.shell.linux": "/bin/bash",
     "files.trimTrailingWhitespace": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "extensions": [
     "eamodio.gitlens",
