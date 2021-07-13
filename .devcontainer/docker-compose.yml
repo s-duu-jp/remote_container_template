@@ -13,3 +13,7 @@ services:
       - ..:/workspace:cached
       - ~/.gitconfig:/root/.gitconfig
     command: sleep infinity
+    ports:
+      - 3000:3000
+      - 4200:4200
+      - 9222:9222
