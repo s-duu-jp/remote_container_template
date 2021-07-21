@@ -11,7 +11,7 @@ RUN apt-get update \
 
 # Install packages
 RUN apt-get update \ 
-  && apt install -y make gcc g++ npm git direnv \
+  && apt install -y make gcc g++ npm git \
   && npm install -g prettier \
   && npm install -g eslint \
   && npm install -g eslint-config-prettier
