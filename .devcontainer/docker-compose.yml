@@ -4,13 +4,16 @@ services:
     container_name: ${COMPOSE_PROJECT_NAME}_web
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    cap_add:
+      - NET_ADMIN
+    sysctls:
+      net.ipv6.conf.all.disable_ipv6: 0
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        VARIANT: ${NODE_VERSION}
-        USER_UID: 1000
-        USER_GID: 1000
+        CONTAINER_OS: ${CONTAINER_OS}
+        NODE_VERSION: ${NODE_VERSION}
     volumes:
       - ..:/workspace:cached
       - ~/.gitconfig:/root/.gitconfig
