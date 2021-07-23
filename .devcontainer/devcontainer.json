@@ -7,6 +7,7 @@
     "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
     "#terminal.integrated.defaultProfile.osx#": "/bin/bash",
     "files.trimTrailingWhitespace": true,
+    "explorer.compactFolders": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
