@@ -14,7 +14,7 @@
     }
   },
   "extensions": [
-    "eamodio.gitlens",
+    "mhutchie.git-graph",
     "msjsdiag.debugger-for-chrome",
     "humao.rest-client",
     "esbenp.prettier-vscode",
