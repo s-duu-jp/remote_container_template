@@ -24,40 +24,17 @@ Docker リモートコンテナのテンプレートです。
       $ git clone https://github.com/s-duu-jp/remote_container_template.git
       ```
 
-1. プロジェクトディレクトリをワークスペースとして VSCODE を開きなおします
+1. 以下コマンドで新しいコンテナを複製起動します。
 
-      ```bash
-      $ cd duu_chat \
-      && code .
-      ```
-
-1. Remote Container 用の環境変数ファイルを複製します
-
-      ```bash
-      $ cp -p .devcontainer/.env_example .devcontainer/.env
-      ```
-
-1. 複製した.env ファイルを編集して保存します
-
-      ```bash
-      # Project Name
-      COMPOSE_PROJECT_NAME=*****　← (例：web_example)
-
-      # Node Version
-      # https://nodejs.org/
-      NODE_VERSION=14
-      ```
-
-      | パラメータ           | 内容                                        |
-      | -------------------- | ------------------------------------------- |
-      | COMPOSE_PROJECT_NAME | これから構築される Docker のコンテナ名      |
-      | NODE_VERSION         | プロジェクトで利用する Node.js のバージョン |
-
-
-1. Docker コンテナの構築を行います
-
-   1. `F1 キー`でコマンドパレットを開く
-
-   1. 「`Remote-Containers: Rebuild and Reopen in Container`」を選択
-
-   1. あとは Docker コンテナの Build が始まり自動的に開発環境が構築されます。
+      注意：ここでは新しいコンテナ名を`hogehoge`とします
+   ```bash
+   $ arg="hogehoge" \
+     && cp -rp remote_container_template ${arg} \
+     && cd ${arg} \
+     && rm -rf .git \
+     && sed -i -e "s/\*\*\*/${arg}/g" .devcontainer/docker-compose.yml \
+     && git init \
+     && git add . \
+     && git commit -m "first commit" \
+     && code --folder-uri vscode-remote://dev-container+$(echo -n $(pwd) | xxd -p)/workspace
+   ```

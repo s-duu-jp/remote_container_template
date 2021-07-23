@@ -1,7 +1,6 @@
-version: "3"
 services:
   web:
-    container_name: ${COMPOSE_PROJECT_NAME}_web
+    container_name: ***_web
     extra_hosts:
       - "host.docker.internal:host-gateway"
     cap_add:
@@ -12,11 +11,15 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        CONTAINER_OS: ${CONTAINER_OS}
-        NODE_VERSION: ${NODE_VERSION}
+        NODE_VAR: 14
+        USER_SID: root
+        USER_UID: 1000
+        USER_GID: 1000
     volumes:
       - ..:/workspace:cached
       - ~/.gitconfig:/root/.gitconfig
+      - ~/.netrc:/root/.netrc
+      - ~/.ssh:/root/.ssh
     command: sleep infinity
     ports:
       - 3000:3000
