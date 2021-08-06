@@ -21,6 +21,3 @@ services:
       - ~/.netrc:/root/.netrc
       - ~/.ssh:/root/.ssh
     command: sleep infinity
-    ports:
-      - 3000:3000
-      - 4200:4200

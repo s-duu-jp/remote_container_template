@@ -3,6 +3,11 @@
   "service": "web",
   "workspaceFolder": "/workspace",
   "remoteUser": "node",
+  "forwardPorts": [
+    3000,
+    3333,
+    4200
+  ],
   "settings": {
     "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
     "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
