@@ -2,6 +2,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "web",
   "workspaceFolder": "/workspace",
+  "remoteUser": "node",
   "settings": {
     "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
     "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
