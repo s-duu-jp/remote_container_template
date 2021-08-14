@@ -27,5 +27,6 @@
     "humao.rest-client",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
+    "cweijan.vscode-redis-client"
   ]
 }

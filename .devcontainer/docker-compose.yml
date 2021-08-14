@@ -21,3 +21,28 @@ services:
       - ~/.netrc:/root/.netrc
       - ~/.ssh:/root/.ssh
     command: sleep infinity
+    links:
+      - mysql
+      - redis
+  mysql:
+    container_name: ***_mysql
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: demo
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      TZ: "Asia/Tokyo"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
+    volumes:
+      - ../volumes/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+  redis:
+    container_name: ***_redis
+    image: redis:6.2.4
+    volumes:
+      - ../volumes/redis:/var/lib/redis
+    ports:
+      - 6379:6379
