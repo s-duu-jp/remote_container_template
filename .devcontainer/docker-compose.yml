@@ -21,9 +21,6 @@ services:
       - ~/.netrc:/root/.netrc
       - ~/.ssh:/root/.ssh
     command: sleep infinity
-    links:
-      - mysql
-      - redis
   mysql:
     container_name: ***_mysql
     image: mysql:5.7
