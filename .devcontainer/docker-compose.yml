@@ -17,9 +17,8 @@ services:
         USER_GID: 1000
     volumes:
       - ..:/workspace:cached
-      - ~/.gitconfig:/root/.gitconfig
-      - ~/.netrc:/root/.netrc
-      - ~/.ssh:/root/.ssh
+      - ~/.gitconfig:/home/node/.gitconfig
+      - ~/.ssh:/home/node/.ssh
     command: sleep infinity
   mysql:
     container_name: ***_mysql
