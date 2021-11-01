@@ -1,6 +1,6 @@
 services:
-  web:
-    container_name: ***_web
+  app:
+    container_name: ***_app
     extra_hosts:
       - "host.docker.internal:host-gateway"
     cap_add:

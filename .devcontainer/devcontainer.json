@@ -1,6 +1,6 @@
 {
+  "service": "app",
   "dockerComposeFile": "docker-compose.yml",
-  "service": "web",
   "workspaceFolder": "/workspace",
   "remoteUser": "node",
   "forwardPorts": [
