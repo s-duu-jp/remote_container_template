@@ -22,16 +22,15 @@
   },
   "extensions": [
     "eamodio.gitlens",
-    "mhutchie.git-graph",
     "msjsdiag.debugger-for-chrome",
-    "angular.ng-template",
-    "ghaschel.vscode-angular-html",
-    "humao.rest-client",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "cweijan.vscode-redis-client",
     "coenraads.bracket-pair-colorizer",
+    "angular.ng-template",
+    "ghaschel.vscode-angular-html",
     "johnpapa.angular2",
+    "humao.rest-client",
+    "cweijan.vscode-redis-client",
     "kumar-harsh.graphql-for-vscode"
   ]
 }
