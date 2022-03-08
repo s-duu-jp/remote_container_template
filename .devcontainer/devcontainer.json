@@ -21,6 +21,5 @@
     "coenraads.bracket-pair-colorizer",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode"
-  ],
-  "forwardPorts": [3000, 4200]
+  ]
 }
