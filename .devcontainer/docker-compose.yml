@@ -12,33 +12,8 @@ services:
       dockerfile: Dockerfile
       args:
         NODE_VAR: 16
-        USER_SID: root
-        USER_UID: 1000
-        USER_GID: 1000
     volumes:
       - ..:/workspace:cached
       - ~/.gitconfig:/home/node/.gitconfig
       - ~/.ssh:/home/node/.ssh
     command: sleep infinity
-  mysql:
-    container_name: ***_mysql
-    image: mysql:5.7
-    environment:
-      MYSQL_DATABASE: demo
-      MYSQL_ROOT_USER: root
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: user
-      MYSQL_PASSWORD: user
-      TZ: "Asia/Tokyo"
-    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci --sql_mode=""
-    volumes:
-      - ../volumes/mysql:/var/lib/mysql
-    ports:
-      - 3306:3306
-  redis:
-    container_name: ***_redis
-    image: redis:6.2.4
-    volumes:
-      - ../volumes/redis:/var/lib/redis
-    ports:
-      - 6379:6379

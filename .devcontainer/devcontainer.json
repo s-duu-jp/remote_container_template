@@ -1,13 +1,8 @@
 {
   "service": "app",
-  "dockerComposeFile": "docker-compose.yml",
   "workspaceFolder": "/workspace",
   "remoteUser": "node",
-  "forwardPorts": [
-    3000,
-    3333,
-    4200
-  ],
+  "dockerComposeFile": "docker-compose.yml",
   "settings": {
     "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
     "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
@@ -23,14 +18,9 @@
   "extensions": [
     "eamodio.gitlens",
     "msjsdiag.debugger-for-chrome",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
     "coenraads.bracket-pair-colorizer",
-    "angular.ng-template",
-    "ghaschel.vscode-angular-html",
-    "johnpapa.angular2",
-    "humao.rest-client",
-    "cweijan.vscode-redis-client",
-    "kumar-harsh.graphql-for-vscode"
-  ]
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ],
+  "forwardPorts": [3000, 4200]
 }
