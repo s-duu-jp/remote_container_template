@@ -2,7 +2,7 @@ services:
   app:
     container_name: ***_app
     extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - host.docker.internal:host-gateway
     cap_add:
       - NET_ADMIN
     sysctls:
@@ -12,8 +12,11 @@ services:
       dockerfile: Dockerfile
       args:
         NODE_VAR: 16
+        USERNAME: node
+        USER_UID: 1000
+        USER_GID: 1000
+    command: sleep infinity
     volumes:
       - ..:/workspace:cached
       - ~/.gitconfig:/home/node/.gitconfig
       - ~/.ssh:/home/node/.ssh
-    command: sleep infinity

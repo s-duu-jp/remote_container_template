@@ -1,8 +1,8 @@
 {
   "service": "app",
   "workspaceFolder": "/workspace",
-  "remoteUser": "node",
   "dockerComposeFile": "docker-compose.yml",
+  "remoteUser": "node",
   "settings": {
     "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
     "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
@@ -17,7 +17,6 @@
   },
   "extensions": [
     "eamodio.gitlens",
-    "msjsdiag.debugger-for-chrome",
     "coenraads.bracket-pair-colorizer",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode"
