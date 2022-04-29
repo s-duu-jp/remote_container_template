@@ -2,12 +2,6 @@ version: "3"
 services:
   app:
     container_name: ***_app
-    extra_hosts:
-      - host.docker.internal:host-gateway
-    cap_add:
-      - NET_ADMIN
-    sysctls:
-      net.ipv6.conf.all.disable_ipv6: 0
     build:
       context: .
       dockerfile: Dockerfile
