@@ -17,6 +17,8 @@ services:
         USER_UID: 1000
         USER_GID: 1000
     command: sleep infinity
+    environment:
+      TZ: Asia/Tokyo
     volumes:
       - ..:/workspace:cached
       - ~/.gitconfig:/home/node/.gitconfig
