@@ -41,4 +41,5 @@ Thumbs.db
 # Custom
 volumes
 .env
+!.devcontainer/.env
 *.rdb
