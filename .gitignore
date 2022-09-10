@@ -40,7 +40,7 @@ Thumbs.db
 
 # Custom
 volumes
-.env
 .angular
 *.rdb
+.env
 !.devcontainer/.env
