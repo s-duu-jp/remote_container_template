@@ -10,17 +10,22 @@
     "terminal.integrated.shellIntegration.enabled": false,
     "files.trimTrailingWhitespace": true,
     "explorer.compactFolders": false,
+    "editor.guides.bracketPairs": true,
+    "editor.bracketPairColorization.enabled": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    },
-    "editor.guides.bracketPairs": true,
-    "editor.bracketPairColorization.enabled": true
+    }
   },
   "extensions": [
     "eamodio.gitlens",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
-  ]
+    "esbenp.prettier-vscode",
+    "ghaschel.vscode-angular-html",
+    "angular.ng-template",
+    "johnpapa.angular2",
+    "humao.rest-client"
+  ],
+  "forwardPorts": [3333,4200,4400]
 }

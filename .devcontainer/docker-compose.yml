@@ -6,7 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        NODE_VAR: 16
         USERNAME: node
         USER_UID: 1000
         USER_GID: 1000
