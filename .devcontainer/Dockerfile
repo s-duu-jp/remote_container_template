@@ -3,7 +3,7 @@ ARG USER_UID
 ARG USER_GID
 
 # https://hub.docker.com/_/microsoft-vscode-devcontainers
-FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0.204.8-buster
+FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0.202.7-16-buster
 
 #--------------------------------------------------------
 # Update UID/GID if needed
