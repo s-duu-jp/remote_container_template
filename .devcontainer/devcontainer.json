@@ -8,6 +8,7 @@
     "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
     "#terminal.integrated.defaultProfile.osx#": "/bin/bash",
     "terminal.integrated.shellIntegration.enabled": false,
+    "typescript.preferences.importModuleSpecifier": "project-relative",
     "files.trimTrailingWhitespace": true,
     "explorer.compactFolders": false,
     "editor.guides.bracketPairs": true,
