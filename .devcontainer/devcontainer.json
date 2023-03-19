@@ -22,11 +22,7 @@
   "extensions": [
     "eamodio.gitlens",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "ghaschel.vscode-angular-html",
-    "angular.ng-template",
-    "johnpapa.angular2",
-    "humao.rest-client"
+    "esbenp.prettier-vscode"
   ],
   "forwardPorts": [3333,4200,4400]
 }
