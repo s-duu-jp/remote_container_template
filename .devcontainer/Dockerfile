@@ -16,6 +16,3 @@ RUN if [ ${USER_GID} != "1000" ] || [ ${USER_UID} != "1000" ]; then \
 
 # StoryBook Conflicting回避用
 RUN echo export NODE_ENV="development" >> /etc/profile
-
-# Install eslint plugins
-RUN npm i -g eslint-plugin-unused-imports
