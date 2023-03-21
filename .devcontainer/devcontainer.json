@@ -2,6 +2,11 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "dockerComposeFile": "docker-compose.yml",
+  "features": {
+    "docker-from-docker": {
+      "version": "latest"
+    }
+  },
   "remoteUser": "node",
   "settings": {
     "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
