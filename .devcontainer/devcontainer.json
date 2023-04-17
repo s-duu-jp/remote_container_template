@@ -7,7 +7,7 @@
       "version": "latest"
     }
   },
-  "remoteUser": "node",
+  "remoteUser": "root",
   "settings": {
     "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
     "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
