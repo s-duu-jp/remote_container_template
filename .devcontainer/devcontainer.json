@@ -7,7 +7,6 @@
       "version": "latest"
     }
   },
-  "remoteUser": "root",
   "customizations": {
     "vscode": {
       "settings": {
