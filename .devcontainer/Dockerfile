@@ -14,5 +14,8 @@ RUN if [ ${USER_GID} != "1000" ] || [ ${USER_UID} != "1000" ]; then \
     && chown -R ${USER_UID}:${USER_GID} /${USERNAME}; \
   fi
 
+# change owner of directory
+RUN mkdir -p /workspace && chown -R node:node /workspace
+
 # StoryBook Conflicting回避用
 RUN echo export NODE_ENV="development" >> /etc/profile
