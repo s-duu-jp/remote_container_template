@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    container_name: XXXXX_app
+    container_name: XXXXX__app
     build:
       context: .
       dockerfile: Dockerfile
@@ -14,7 +14,8 @@ services:
     environment:
       TZ: Asia/Tokyo
     volumes:
-      - XXXXX_workspace:/workspace
+      - XXXXX_node_modules:/workspace/node_modules
+      - ..:/workspace:cached
       - ~/.ssh:/home/node/.ssh
 volumes:
-  XXXXX_workspace:
+  XXXXX_node_modules:

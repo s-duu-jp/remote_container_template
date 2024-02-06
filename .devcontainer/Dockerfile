@@ -15,7 +15,7 @@ RUN if [ ${USER_GID} != "1000" ] || [ ${USER_UID} != "1000" ]; then \
   fi
 
 # change owner of directory
-RUN mkdir -p /workspace && chown -R node:node /workspace
+RUN mkdir -p /workspace/node_modules && chown -R node:node /workspace/node_modules
 
 # StoryBook Conflicting回避用
 RUN echo export NODE_ENV="development" >> /etc/profile
