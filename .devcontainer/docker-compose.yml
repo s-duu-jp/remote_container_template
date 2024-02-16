@@ -9,13 +9,10 @@ services:
         - USERNAME=node
         - USER_UID=1000
         - USER_GID=1000
-    network_mode: 'host'
     command: sleep infinity
+    network_mode: 'host'
     environment:
       TZ: Asia/Tokyo
     volumes:
-      - XXXXX_node_modules:/workspace/node_modules
       - ..:/workspace:cached
       - ~/.ssh:/home/node/.ssh
-volumes:
-  XXXXX_node_modules:

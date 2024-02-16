@@ -19,7 +19,6 @@
         "explorer.compactFolders": false,
         "editor.guides.bracketPairs": true,
         "editor.bracketPairColorization.enabled": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
           "source.addMissingImports": true,
@@ -28,8 +27,6 @@
       },
       "extensions": [
         "eamodio.gitlens",
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
         "GitHub.copilot"
       ]
     }

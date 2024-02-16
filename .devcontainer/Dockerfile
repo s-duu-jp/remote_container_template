@@ -13,9 +13,3 @@ RUN if [ ${USER_GID} != "1000" ] || [ ${USER_UID} != "1000" ]; then \
     && usermod --uid ${USER_UID} --gid ${USER_GID} ${USERNAME} \
     && chown -R ${USER_UID}:${USER_GID} /${USERNAME}; \
   fi
-
-# change owner of directory
-RUN mkdir -p /workspace/node_modules && chown -R node:node /workspace/node_modules
-
-# StoryBook Conflicting回避用
-RUN echo export NODE_ENV="development" >> /etc/profile
