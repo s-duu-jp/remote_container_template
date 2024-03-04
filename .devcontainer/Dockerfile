@@ -14,5 +14,6 @@ RUN if [ ${USER_GID} != "1000" ] || [ ${USER_UID} != "1000" ]; then \
     && chown -R ${USER_UID}:${USER_GID} /${USERNAME}; \
   fi
 
-# Switch User
+# Workspace setting
+RUN mkdir -p /workspace && chown -R node:node /workspace
 USER node
