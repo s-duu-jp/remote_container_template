@@ -1,18 +1,18 @@
-version: '3'
+version: "3"
+networks:
+  XXXXX_network:
+    driver: bridge
 services:
   app:
     container_name: XXXXX_app
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        - USERNAME=node
-        - USER_UID=1000
-        - USER_GID=1000
     command: sleep infinity
-    network_mode: 'host'
     environment:
       TZ: Asia/Tokyo
     volumes:
       - ..:/workspace:cached
-      - ~/.ssh:/home/node/.ssh
+      - ~/.ssh:/home/vscode/.ssh
+    networks:
+      - XXXXX_network
