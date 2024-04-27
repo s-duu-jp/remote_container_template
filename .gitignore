@@ -41,7 +41,6 @@ testem.log
 Thumbs.db
 
 # Custom
-bundle
 volumes
 .angular
 *.rdb
