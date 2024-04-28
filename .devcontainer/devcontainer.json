@@ -19,11 +19,10 @@
         "explorer.compactFolders": false,
         "editor.guides.bracketPairs": true,
         "editor.bracketPairColorization.enabled": true,
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-          "source.addMissingImports": true,
-          "source.fixAll.eslint": true
-        }
+        "editor.codeActionsOnSave": [
+          "source.addMissingImports",
+          "source.fixAll.eslint"
+        ]
       },
       "extensions": [
         "eamodio.gitlens",
