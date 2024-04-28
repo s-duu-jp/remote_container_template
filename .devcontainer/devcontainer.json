@@ -2,11 +2,13 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "dockerComposeFile": "docker-compose.yml",
+  "postCreateCommand": "./.devcontainer/sh/postCreateCommand.sh",
   "features": {
     "docker-from-docker": {
       "version": "latest"
     }
   },
+  "forwardPorts": [],
   "customizations": {
     "vscode": {
       "settings": {
@@ -29,6 +31,5 @@
         "GitHub.copilot"
       ]
     }
-  },
-  "forwardPorts": []
+  }
 }
