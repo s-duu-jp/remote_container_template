@@ -11,8 +11,8 @@ services:
     command: sleep infinity
     environment:
       TZ: Asia/Tokyo
+    networks:
+      - XXXXX_network
     volumes:
       - ..:/workspace:cached
       - ~/.ssh:/home/vscode/.ssh
-    networks:
-      - XXXXX_network
