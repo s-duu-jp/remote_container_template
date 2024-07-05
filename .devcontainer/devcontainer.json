@@ -27,6 +27,7 @@
         ]
       },
       "extensions": [
+        "bierner.markdown-mermaid",
         "eamodio.gitlens",
         "GitHub.copilot"
       ]
