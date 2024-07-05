@@ -12,9 +12,9 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
-        "#terminal.integrated.defaultProfile.windows#": "/bin/bash",
-        "#terminal.integrated.defaultProfile.osx#": "/bin/bash",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.defaultProfile.windows": "/bin/bash",
+        "terminal.integrated.defaultProfile.osx": "/bin/bash",
         "terminal.integrated.shellIntegration.enabled": false,
         "typescript.preferences.importModuleSpecifier": "project-relative",
         "files.trimTrailingWhitespace": true,
@@ -27,7 +27,6 @@
         ]
       },
       "extensions": [
-        "bierner.markdown-mermaid",
         "eamodio.gitlens",
         "GitHub.copilot"
       ]
