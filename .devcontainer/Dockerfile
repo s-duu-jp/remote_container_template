@@ -13,8 +13,5 @@ RUN if [ "$USER_UID" != "1000" ] || [ "$USER_GID" != "1000" ]; then \
     chown -R $USER_UID:$USER_GID /home/$USERNAME; \
     fi
 
-# パッケージリストを更新
-RUN apt update
-
 # ワークスペースディレクトリを設定
 WORKDIR /workspace
