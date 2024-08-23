@@ -3,6 +3,7 @@
   "workspaceFolder": "/workspace",
   "dockerComposeFile": "docker-compose.yml",
   "postCreateCommand": "./.devcontainer/sh/postCreateCommand.sh",
+  "shutdownAction": "stopCompose",
   "features": {
     "docker-from-docker": {
       "version": "latest"
