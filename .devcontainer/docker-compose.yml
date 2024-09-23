@@ -11,6 +11,7 @@ services:
     command: sleep infinity
     environment:
       TZ: Asia/Tokyo
+      GODEBUG: netdns=go
     networks:
       - XXXXX_network
     volumes:
