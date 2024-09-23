@@ -1,3 +1,4 @@
-# Custom
-.env
-!.devcontainer/.env
+# 共通
+tmp
+\.env
+\.env\.*
