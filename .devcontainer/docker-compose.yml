@@ -16,4 +16,5 @@ services:
       - XXXXX_network
     volumes:
       - ..:/workspace:cached
-      - ~/.ssh:/home/vscode/.ssh
+      - ~/.ssh:/home/vscode/.ssh:ro
+      - ~/.gitconfig:/home/vscode/.gitconfig:ro
