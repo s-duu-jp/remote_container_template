@@ -18,7 +18,3 @@ WORKDIR /workspace
 
 # Switch to the specified user
 USER ${USERNAME}
-
-# Update apt package list
-RUN sudo apt update
-
