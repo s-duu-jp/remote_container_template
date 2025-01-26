@@ -11,10 +11,9 @@ services:
     command: sleep infinity
     environment:
       TZ: Asia/Tokyo
-      GODEBUG: netdns=go
-    networks:
-      - XXXXX_network
     volumes:
       - ..:/workspace:cached
       - ~/.ssh:/home/vscode/.ssh:ro
       - ~/.gitconfig:/home/vscode/.gitconfig:ro
+    networks:
+      - XXXXX_network
