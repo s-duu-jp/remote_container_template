@@ -23,6 +23,7 @@
         "explorer.compactFolders": false,
         "editor.guides.bracketPairs": true,
         "editor.bracketPairColorization.enabled": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": [
           "source.addMissingImports",
@@ -30,6 +31,7 @@
         ]
       },
       "extensions": [
+        "esbenp.prettier-vscode",
         "bierner.markdown-mermaid",
         "eamodio.gitlens",
         "GitHub.copilot"
