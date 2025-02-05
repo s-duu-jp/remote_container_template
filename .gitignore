@@ -1,5 +1,4 @@
 # 共通
-tmp
+\tmp
 \.env
 \.env\.*
-node_modules
