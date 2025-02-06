@@ -2,7 +2,7 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "dockerComposeFile": "docker-compose.yml",
-  "postCreateCommand": "sh -x .devcontainer/sh/postCreateCommand.sh",
+  "postCreateCommand": "bash -x .devcontainer/sh/postCreateCommand.sh",
   "postStartCommand": "clear",
   "shutdownAction": "stopCompose",
   "features": {
