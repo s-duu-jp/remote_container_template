@@ -14,6 +14,9 @@ services:
     volumes:
       - ..:/workspace:cached
       - ~/.ssh:/home/vscode/.ssh:ro
+      - ~/.config/gh:/home/vscode/.config/gh
       - ~/.gitconfig:/home/vscode/.gitconfig:ro
+      - ~/.claude.json:/home/vscode/.claude.json
+      - ~/.claude/.credentials.json:/home/vscode/.claude/.credentials.json
     networks:
       - XXXXX_network

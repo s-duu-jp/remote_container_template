@@ -2,8 +2,9 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "dockerComposeFile": "docker-compose.yml",
+  "initializeCommand": "bash -x .devcontainer/sh/initializeCommand.sh",
   "postCreateCommand": "bash -x .devcontainer/sh/postCreateCommand.sh",
-  "postStartCommand": "clear && exec bash",
+  "postStartCommand": "bash -x .devcontainer/sh/postStartCommand.sh",
   "shutdownAction": "stopCompose",
   "features": {
     "docker-from-docker": {
@@ -18,7 +19,7 @@
         "terminal.integrated.defaultProfile.windows": "/bin/bash",
         "terminal.integrated.defaultProfile.osx": "/bin/bash",
         "terminal.integrated.shellIntegration.enabled": false,
-        "typescript.preferences.importModuleSpecifier": "project-relative",
+        "js/ts.preferences.importModuleSpecifier": "project-relative",
         "files.trimTrailingWhitespace": true,
         "explorer.compactFolders": false,
         "editor.guides.bracketPairs": true,
