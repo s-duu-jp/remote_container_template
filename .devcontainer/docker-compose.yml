@@ -17,6 +17,7 @@ services:
       - ~/.config/gh:/home/vscode/.config/gh
       - ~/.gitconfig:/home/vscode/.gitconfig:ro
       - ~/.claude.json:/home/vscode/.claude.json
-      - ~/.claude/.credentials.json:/home/vscode/.claude/.credentials.json
+      - ~/.claude.json:/home/vscode/.claude.json
+      - ~/.claude_XXXXX:/home/vscode/.claude
     networks:
       - XXXXX_network

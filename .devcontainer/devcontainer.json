@@ -29,6 +29,11 @@
         "editor.codeActionsOnSave": [
           "source.addMissingImports",
           "source.fixAll.eslint"
+        ],
+        "github.copilot.chat.commitMessageGeneration.instructions": [
+          {
+            "file": ".claude/skills/project-commit-message/SKILL.md"
+          }
         ]
       },
       "extensions": [
